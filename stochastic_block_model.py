@@ -21,9 +21,6 @@ def initialize_sbm_probability_matrix(parameters):
     p_between_communities = (edge_density * num_indivs * num_communities) / (modularity * community_size**2)
     p_within_community = (edge_density * num_indivs * num_communities) / (community_size**2)
 
-    print(p_between_communities)
-    print(p_within_community)
-
     for i in range(num_indivs):
         for j in range(num_indivs):
             if (i == j):
